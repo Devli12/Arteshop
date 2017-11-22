@@ -1,1 +1,24 @@
 
+.center {
+	margin: auto;
+	width: 70%;
+}
+
+table {
+	#text-align: center;
+	#vertical-align: middle;
+	margin-left: 30%;
+}
+
+.button {
+	background-color: #2F2F2F;
+	color: white;
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+	padding: 20px 30px;
+	margin: 4px 10px;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: gray;
+}
