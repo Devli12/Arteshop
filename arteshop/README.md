@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `tps://arteshop.herokuapp.com`. The app will automatically reload if you change any of the source files.
+after making changes in github, run 'git add .' command in src folder.
+then run 'git commit -am 'linked db' and 'git push heroku master' command in arteshop folder.
 
 ## Code scaffolding
 
