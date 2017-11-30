@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('skillshop App', () => {
+describe('client App', () => {
   let page: AppPage;
 
   beforeEach(() => {
