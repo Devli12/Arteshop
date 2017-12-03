@@ -8,6 +8,7 @@
     <label>Password</label>
     <input type="password" class="form-control" [(ngModel)]="password" name="password">
   </div>
-  <input [routerLink]="['/profile']" type="submit" class="btn btn-primary" value="Login">
+  <input type="submit" class="btn btn-primary" value="Login">
+  <a class="button" [routerLink]="['../profile']">Skip to Profile</a>
   
 </form>
