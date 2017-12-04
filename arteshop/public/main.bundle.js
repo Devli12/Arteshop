@@ -226,7 +226,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".center {\r\n\tmargin: auto;\r\n\twidth: 70%;\r\n}\r\n\r\ntable {\r\n\tmargin-left: 30%;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n}\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
+exports.push([module.i, ".center {\r\n\tmargin: auto;\r\n\twidth: 70%;\r\n}\r\n\r\ntable {\r\n\tmargin-left: 30%;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n\theight: 1000px;\r\n}\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
 
 // exports
 
@@ -287,7 +287,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "label {\r\n\tcolor: white;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n}\r\n\r\n.center-div {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n}", ""]);
+exports.push([module.i, "label {\r\n\tcolor: white;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n\theight: 1000px;\r\n}\r\n\r\n.center-div {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n}", ""]);
 
 // exports
 
