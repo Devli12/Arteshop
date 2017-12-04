@@ -10,6 +10,7 @@ import {Router} from '@angular/router';
   
 export class ProfileComponent implements OnInit {
   user:Object;
+  profilePic: Object;
 
   constructor(private authService:AuthService, private router:Router) { }
 
@@ -24,7 +25,6 @@ export class ProfileComponent implements OnInit {
   }
   
   addImage() {
-    // Open the file explorer
     // Save selected image 
     // Save image path into database using HTTP post and backend scripting (Express?)
   }

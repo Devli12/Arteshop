@@ -1,11 +1,11 @@
 <div *ngIf="user">
   <h2 class="page-header">{{user.name}}'s Profile</h2>
   <div>
-	<button on-click="addImage()">
-		<img ng-src="getProfilePicture()">
-	</button>
+  <img ng-src="getProfilePicture()">
+  <input type="file" accept="image/*" [(ngModel)]="profilePic" name="profilePic">
+
 	<h2>{{user.name}}</h2>
-	<p>{{user.bio}}</p>
+	<input type="text" ng-value="{{user.bio}}">
 	<h2>Skill Tags</h2>
 	<!--
 	Skill tags go here
