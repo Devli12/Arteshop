@@ -7,6 +7,7 @@ import {Router} from '@angular/router';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
+  
 export class ProfileComponent implements OnInit {
   user:Object;
 
@@ -23,9 +24,9 @@ export class ProfileComponent implements OnInit {
   }
   
   addImage() {
-	  // Open the file explorer
-	  // Save selected image 
-	  // Save image path into database using a service
+    // Open the file explorer
+    // Save selected image 
+    // Save image path into database using HTTP post and backend scripting (Express?)
   }
   
   getProfilePicture() {
@@ -34,5 +35,4 @@ export class ProfileComponent implements OnInit {
 	  // If the attempt returns null
 		// Return the placeholder image path
   }
-
 }
