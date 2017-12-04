@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<app-navbar></app-navbar>\r\n<div class = \"container\">\r\n\t<router-outlet></router-outlet>\r\n\t<flash-messages></flash-messages>\r\n</div>\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div class = \"container\">\r\n\t<router-outlet></router-outlet>\r\n\t<flash-messages></flash-messages>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -300,7 +300,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Login</h2>\r\n<form (submit)=\"onLoginSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label>Username</label>\r\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label>Password</label>\r\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Login\">\r\n  \r\n</form>\r\n"
+module.exports = "  <div id=\"logo\" style=\"text-align:center\">\r\n    <img src=\"../assets/logo.png\">\r\n  </div>\r\n<form (submit)=\"onLoginSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label>Username</label>\r\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label>Password</label>\r\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Login\">\r\n  \r\n</form>\r\n"
 
 /***/ }),
 
@@ -344,11 +344,11 @@ var LoginComponent = (function () {
         this.authService.authenticateUser(user).subscribe(function (data) {
             if (data.success) {
                 _this.authService.storeUserData(data.token, data.user);
-                _this.router.navigate(['../profile']);
                 _this.flashMessage.show('You are now logged in', {
                     cssClass: 'alert-success',
                     timeout: 10000
                 });
+                _this.router.navigate(['../dashboard']);
             }
             else {
                 _this.flashMessage.show(data.msg, {
@@ -553,7 +553,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Register</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n\t<div class=\"form-group\">\r\n\t\t<label>Name</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\"\r\n\t\tclass=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Username</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Email</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Password</label>\r\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\r\n\t</div>\r\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>"
+module.exports = "<app-navbar></app-navbar>\r\n<br>\r\n<br>\r\n<br>\r\n<h2 class=\"page-header\">Register</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n\t<div class=\"form-group\">\r\n\t\t<label>Name</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\"\r\n\t\tclass=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Username</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Email</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Password</label>\r\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\r\n\t</div>\r\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>"
 
 /***/ }),
 
@@ -613,7 +613,7 @@ var RegisterComponent = (function () {
         this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
                 _this.flashMessage.show('You are now registered and can log in', { cssClass: 'alert-success', timeout: 3000 });
-                _this.router.navigate(['/login']);
+                _this.router.navigate(['dashboard']);
             }
             else {
                 _this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
