@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<body>\r\n<router-outlet></router-outlet>\r\n<flash-messages></flash-messages>\r\n</body>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<body>\r\n<flash-messages></flash-messages>\r\n<router-outlet></router-outlet>\r\n</body>"
 
 /***/ }),
 
@@ -613,7 +613,7 @@ var RegisterComponent = (function () {
         this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
                 _this.flashMessage.show('You are now registered and can log in', { cssClass: 'alert-success', timeout: 3000 });
-                _this.router.navigate(['/profile']);
+                _this.router.navigateByUrl("/profile");
             }
             else {
                 _this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
