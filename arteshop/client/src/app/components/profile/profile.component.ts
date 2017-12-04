@@ -21,5 +21,18 @@ export class ProfileComponent implements OnInit {
       return false;
     });
   }
+  
+  addImage() {
+	  // Open the file explorer
+	  // Save selected image 
+	  // Save image path into database using a service
+  }
+  
+  getProfilePicture() {
+	  // Attempt to fetch the image reference from the database using a service
+		// Return the image path
+	  // If the attempt returns null
+		// Return the placeholder image path
+  }
 
 }
