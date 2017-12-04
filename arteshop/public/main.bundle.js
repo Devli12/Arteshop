@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".container {\r\n\tbackground-color: #2F2F2F;\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div class = \"container\">\r\n\t<router-outlet></router-outlet>\r\n\t<flash-messages></flash-messages>\r\n</div>\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<body>\r\n<router-outlet></router-outlet>\r\n<flash-messages></flash-messages>\r\n</body>"
 
 /***/ }),
 
@@ -226,7 +226,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".center {\r\n\tmargin: auto;\r\n\twidth: 70%;\r\n}\r\n\r\ntable {\r\n\tmargin-left: 30%;\r\n}\r\n\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
+exports.push([module.i, ".center {\r\n\tmargin: auto;\r\n\twidth: 70%;\r\n}\r\n\r\ntable {\r\n\tmargin-left: 30%;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n}\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
 
 // exports
 
@@ -239,7 +239,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center\">\r\n  <div id=\"logo\" style=\"text-align:center\">\r\n    <img src=\"../assets/logo.png\">\r\n  </div>\r\n  <div class=\"center\">\r\n    <a class=\"button\" [routerLink]=\"['/register']\">Register</a> <a class=\"button\" [routerLink]=\"['/login']\">Login</a>\r\n  </div>\r\n</div>\r\n\r\n"
+module.exports = "<div class=\"text-center background\">\r\n  <div id=\"logo\" style=\"text-align:center\">\r\n    <img src=\"../assets/logo.png\">\r\n  </div>\r\n  <div class=\"center\">\r\n    <a class=\"button\" [routerLink]=\"['/register']\">Register</a> <a class=\"button\" [routerLink]=\"['/login']\">Login</a>\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -287,7 +287,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "label {\r\n\tcolor: white;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n}\r\n\r\n.center-div {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n}", ""]);
 
 // exports
 
@@ -300,7 +300,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "  <div id=\"logo\" style=\"text-align:center\">\r\n    <img src=\"../assets/logo.png\">\r\n  </div>\r\n<form (submit)=\"onLoginSubmit()\">\r\n  <div class=\"form-group\">\r\n    <label>Username</label>\r\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label>Password</label>\r\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Login\">\r\n  \r\n</form>\r\n"
+module.exports = "<div class=\"background\">\r\n  <div id=\"logo\" style=\"text-align:center\">\r\n    <img src=\"../assets/logo.png\">\r\n  </div>\r\n  <div class=\"center-div\">\r\n    <form (submit)=\"onLoginSubmit()\">\r\n    <div class=\"form-group\">\r\n    <label>Username</label>\r\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label>Password</label>\r\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\r\n  </div>\r\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Login\">\r\n  </form>\r\n  </div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -540,7 +540,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "label {\r\n\tcolor: 2F2F2F;\r\n}\r\n\r\n.background {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n\tbackground-color: #E8E8E8;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n}", ""]);
 
 // exports
 
@@ -553,7 +553,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<br>\r\n<br>\r\n<br>\r\n<h2 class=\"page-header\">Register</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n\t<div class=\"form-group\">\r\n\t\t<label>Name</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\"\r\n\t\tclass=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Username</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Email</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Password</label>\r\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\r\n\t</div>\r\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>"
+module.exports = "<app-navbar></app-navbar>\r\n<br>\r\n<br>\r\n<br>\r\n<div class=\"background\">\r\n<h2 class=\"page-header\">Personal Information</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n\t<div class=\"form-group\">\r\n\t\t<label>Name</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\"\r\n\t\tclass=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Username</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Email</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Password</label>\r\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\r\n\t</div>\r\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>\r\n</div>"
 
 /***/ }),
 
