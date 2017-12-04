@@ -11,6 +11,7 @@ import {Router} from '@angular/router';
 export class ProfileComponent implements OnInit {
   user:Object;
   profilePic: Object;
+  picUrl: String;
 
   constructor(private authService:AuthService, private router:Router) { }
 
@@ -22,17 +23,23 @@ export class ProfileComponent implements OnInit {
       console.log(err);
       return false;
     });
+	
+	this.getProfilePicture();
   }
   
+/*   
   addImage() {
-    // Save selected image 
-    // Save image path into database using HTTP post and backend scripting (Express?)
-  }
-  
+     Save selected image 
+     Save image path into database using HTTP post and backend scripting (Express?)
+  } 
+  */
   getProfilePicture() {
+	  
+	  var placeholderPath = '../../../assets/avatar_placeholder.png';
 	  // Attempt to fetch the image reference from the database using a service
 		// Return the image path
 	  // If the attempt returns null
 		// Return the placeholder image path
+	this.picUrl = placeholderPath;
   }
 }
