@@ -1,0 +1,45 @@
+.tagBox {
+   width: 720px;
+   height: 100px;
+   border-radius: 10px;
+   border: 1px solid #000;
+   resize: none;
+   padding-right: 2px;
+   overflow: hidden;
+ }
+
+.infoBox {
+  width: 1440px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  resize: none;
+  padding-right: 2px;
+  overflow: hidden;
+}
+
+.content {
+  margin-top: 50px;
+  width: 1460px;
+  margin: auto;
+}
+
+.button {
+  background-color: #E8E8E8;
+  color: black;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  margin: 4px 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: gray;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+
+
