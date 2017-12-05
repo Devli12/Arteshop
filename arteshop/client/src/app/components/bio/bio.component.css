@@ -3,7 +3,6 @@
   width: 2000px;
   height: 1000px;
   margin: auto;
-  background-color: #E8E8E8;
   margin-top: 50px;
 }
 
@@ -15,7 +14,6 @@ h2 {
 .bioBox {
   width: 1000px;
   height: 460px;
-  background-color: #E8E8E8;
   border: solid 2px #414141;
   margin-bottom: 50px;
 }
