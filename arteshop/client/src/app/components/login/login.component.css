@@ -1,0 +1,13 @@
+label {
+	color: white;
+}
+
+.background {
+	background-color: #2F2F2F;
+	height: 1000px;
+}
+
+.center-div {
+	width: 600px;
+	margin: auto;
+}
