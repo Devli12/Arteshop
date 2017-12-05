@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<body>\r\n<flash-messages></flash-messages>\r\n<router-outlet></router-outlet>\r\n</body>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<body>\r\n<flash-messages></flash-messages>\r\n<router-outlet></router-outlet>\r\n</body>\r\n"
 
 /***/ }),
 
@@ -348,14 +348,14 @@ var LoginComponent = (function () {
                     cssClass: 'alert-success',
                     timeout: 10000
                 });
-                _this.router.navigateByUrl("/profile");
+                _this.router.navigate(['/profile']);
             }
             else {
                 _this.flashMessage.show(data.msg, {
                     cssClass: 'alert-danger',
                     timeout: 10000
                 });
-                _this.router.navigate(['login']);
+                _this.router.navigate(['/login']);
             }
         });
     };
@@ -466,7 +466,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "img {\r\n    border-radius: 50%;\r\n}", ""]);
 
 // exports
 
@@ -479,7 +479,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"user\">\r\n  <h2 class=\"page-header\">{{user.name}}</h2>\r\n  <ul class=\"list-group\">\r\n    <li class=\"list-group-item\">Username: {{user.username}}</li>\r\n    <li class=\"list-group-item\">Email: {{user.email}}</li>\r\n  </ul>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"user\">\r\n   <h2 class=\"page-header\">{{user.name}}'s Profile</h2> \r\n  <div>\r\n  <img src=\"{{picUrl}}\">\r\n  <input type=\"file\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\">\r\n\r\n \t<h2>{{user.name}}</h2> \r\n \t<input type=\"text\" ng-value=\"{{user.bio}}\"> \r\n\t<h2>Skill Tags</h2>\r\n\t<!--\r\n\tSkill tags go here\r\n\t-->\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -516,6 +516,21 @@ var ProfileComponent = (function () {
             console.log(err);
             return false;
         });
+        this.getProfilePicture();
+    };
+    /*
+      addImage() {
+         Save selected image
+         Save image path into database using HTTP post and backend scripting (Express?)
+      }
+      */
+    ProfileComponent.prototype.getProfilePicture = function () {
+        var placeholderPath = '../../../assets/avatar_placeholder.png';
+        // Attempt to fetch the image reference from the database using a service
+        // Return the image path
+        // If the attempt returns null
+        // Return the placeholder image path
+        this.picUrl = placeholderPath;
     };
     ProfileComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -540,7 +555,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "label {\r\n\tcolor: 2F2F2F;\r\n}\r\n\r\n.background {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n\tbackground-color: #E8E8E8;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n}", ""]);
+exports.push([module.i, "label {\r\n\tcolor: #2F2F2F;\r\n}\r\n\r\n.background {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n\tbackground-color: #E8E8E8;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n}", ""]);
 
 // exports
 
