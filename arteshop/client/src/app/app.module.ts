@@ -12,7 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { BioComponent} from "./components/bio/bio.component";
-import { RatingComponent} from "./components/rating/rating.componenet";
+import { RatingComponent} from "./components/rating/rating.component";
+import { TagsComponent} from "./components/tags/tags.component"
 
 import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
@@ -27,7 +28,9 @@ const appRoutes: Routes =  [
   {path:'dashboard', component: DashboardComponent},
   {path:'profile', component: ProfileComponent},
   {path:'navbar', component: NavbarComponent},
-  {path:'bio', component: BioComponent}
+  {path:'bio', component: BioComponent},
+  {path:'tags', component: TagsComponent}
+
 ]
 
 @NgModule({
@@ -40,7 +43,8 @@ const appRoutes: Routes =  [
     DashboardComponent,
     ProfileComponent,
 	  BioComponent,
-    RatingComponent
+    RatingComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
