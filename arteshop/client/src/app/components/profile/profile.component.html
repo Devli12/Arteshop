@@ -1,7 +1,14 @@
 <div *ngIf="user">
-  <h2 class="page-header">{{user.name}}</h2>
-  <ul class="list-group">
-    <li class="list-group-item">Username: {{user.username}}</li>
-    <li class="list-group-item">Email: {{user.email}}</li>
-  </ul>
+   <h2 class="page-header">{{user.name}}'s Profile</h2> 
+  <div>
+  <img src="{{picUrl}}">
+  <input type="file" accept="image/*" [(ngModel)]="profilePic" name="profilePic">
+
+ 	<h2>{{user.name}}</h2> 
+ 	<input type="text" ng-value="{{user.bio}}"> 
+	<h2>Skill Tags</h2>
+	<!--
+	Skill tags go here
+	-->
+  </div>
 </div>
