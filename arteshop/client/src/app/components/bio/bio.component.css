@@ -1,10 +1,41 @@
 
 .background {
-  width: 200000px;
+  width: 2000px;
+  height: 1000px;
   margin: auto;
-  background-color: #2F2F2F;
+  background-color: #E8E8E8;
+  margin-top: 50px;
 }
 
 h2 {
 	text-align: left;
+  font-size: 15px;
 }
+
+.bioBox {
+  width: 1000px;
+  height: 460px;
+  background-color: #E8E8E8;
+  border: solid 2px #414141;
+  margin-bottom: 50px;
+}
+
+.content {
+  width: 1000px;
+  margin: auto;
+}
+
+.button {
+  background-color: #E8E8E8;
+  color: black;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  margin: 4px 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: gray;
+}
+
+
