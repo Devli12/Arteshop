@@ -1,13 +1,10 @@
-label {
-	color: 2F2F2F;
-}
 
 .background {
-	width: 600px;
-	margin: auto;
-	background-color: #E8E8E8;
+  width: 200000px;
+  margin: auto;
+  background-color: #2F2F2F;
 }
 
 h2 {
-	text-align: center;
+	text-align: left;
 }
