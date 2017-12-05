@@ -479,7 +479,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"user\">\r\n   <h2 class=\"page-header\">{{user.name}}'s Profile</h2> \r\n<!--  <div>\r\n  <img src=\"{{picUrl}}\">\r\n  <input type=\"file\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\">\r\n\r\n \t<h2>{{user.name}}</h2> \r\n \t<input type=\"text\" ng-value=\"{{user.bio}}\"> \r\n\t<h2>Skill Tags</h2>\r\n\t<!--\r\n\tSkill tags go here\r\n\t\r\n  </div>-->\r\n</div> "
+module.exports = "\r\n<br>\r\n<br>\r\n<br>\r\n<div>\r\n   <h2 class=\"page-header\">Prabpreet's Profile</h2> \r\n  <div>\r\n  <img src=\"../../../assets/avatar_placeholder.png\">\r\n  <input size=\"50\" type=\"file\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\">\r\n\r\n\r\n \t<h2>Prabpreet Singh</h2> \r\n \t<textarea rows=\"4\" cols=\"50\">\"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h2>Skill Tags</h2>\r\n\r\n  </div>\r\n</div>"
 
 /***/ }),
 
