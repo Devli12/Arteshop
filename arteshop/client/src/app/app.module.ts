@@ -19,6 +19,7 @@ import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
+import {Navbar2Component} from "./components/navbar2/navbar2.component";
 
 
 const appRoutes: Routes =  [
@@ -29,8 +30,8 @@ const appRoutes: Routes =  [
   {path:'profile', component: ProfileComponent},
   {path:'navbar', component: NavbarComponent},
   {path:'bio', component: BioComponent},
-  {path:'tags', component: TagsComponent}
-
+  {path:'tags', component: TagsComponent},
+  {path:'navbar2', component: Navbar2Component}
 ]
 
 @NgModule({
@@ -44,7 +45,8 @@ const appRoutes: Routes =  [
     ProfileComponent,
 	  BioComponent,
     RatingComponent,
-    TagsComponent
+    TagsComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,
