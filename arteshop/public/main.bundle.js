@@ -90,11 +90,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__("../../../../../src/app/components/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/components/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__("../../../../../src/app/components/profile/profile.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__ = __webpack_require__("../../../../../src/app/components/bio/bio.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__ = __webpack_require__("../../../../../src/app/components/rating/rating.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__ = __webpack_require__("../../../../../src/app/components/tags/tags.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -117,13 +120,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__["a" /* LoginComponent */] },
-    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_15__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */] },
-    { path: 'navbar', component: __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */] }
+    { path: 'navbar', component: __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */] },
+    { path: 'bio', component: __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */] },
+    { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -137,20 +145,84 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__["a" /* RegisterComponent */],
                 __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__["a" /* DashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */]
+                __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__["a" /* RatingComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_14_angular2_flash_messages__["FlashMessagesModule"]
+                __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__["FlashMessagesModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_12__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_13__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_15__guards_auth_guard__["a" /* AuthGuard */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_15__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_16__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_18__guards_auth_guard__["a" /* AuthGuard */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/bio/bio.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\r\n.background {\r\n  width: 2000px;\r\n  height: 1000px;\r\n  margin: auto;\r\n  margin-top: 50px;\r\n}\r\n\r\nh2 {\r\n\ttext-align: left;\r\n  font-size: 15px;\r\n}\r\n\r\n.bioBox {\r\n  width: 1000px;\r\n  height: 460px;\r\n  border: solid 2px #414141;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n.content {\r\n  width: 1000px;\r\n  margin: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\n\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/bio/bio.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"background\">\r\n  <h1 class=\"text-center\">Personal Information</h1>\r\n<h2 class=\"page-header text-center\">Please enter a short paragraph explaining yourself. No description will be shown in the profile if submitted empty.  </h2>\r\n  <div class=\"content\">\r\n  <textarea class=\"bioBox\"></textarea>\r\n  <a class=\"button\" [routerLink]=\"['/dashboard']\">Submit</a>\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/bio/bio.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BioComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BioComponent = (function () {
+    function BioComponent() {
+    }
+    BioComponent.prototype.ngOnInit = function () {
+    };
+    BioComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-bio',
+            template: __webpack_require__("../../../../../src/app/components/bio/bio.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/bio/bio.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BioComponent);
+    return BioComponent;
 }());
 
 
@@ -165,7 +237,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".center-element {\r\n  display: block;\r\n  width: 460px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n#content {\r\n  margin-top: 135px;\r\n}\r\n\r\n#background {\r\n  height: 1000px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -178,7 +250,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Dashboard</h2>\r\n<p>Welcome to your dashboard</p>\r\n"
+module.exports = "<div id=\"background\">\r\n  <div id=\"content\" class=\"center-element\">\r\n    <app-profile></app-profile>\r\n</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -287,7 +359,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "label {\r\n\tcolor: white;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n\theight: 1000px;\r\n}\r\n\r\n.center-div {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n}", ""]);
+exports.push([module.i, "label {\r\n\tcolor: white;\r\n}\r\n\r\n.background {\r\n\tbackground-color: #2F2F2F;\r\n\theight: 1000px;\r\n}\r\n\r\n.center-div {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n}\r\n", ""]);
 
 // exports
 
@@ -466,7 +538,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "img {\r\n    border-radius: 50%;\r\n}", ""]);
+exports.push([module.i, "img {\r\n  border-radius: 50%;\r\n  margin: auto;\r\n  width: 84px;\r\n  width: 127px;\r\n}\r\n\r\n.vertical-margins {\r\n  margin-top: 25px;\r\n  margin-bottom: 25px\r\n}\r\n\r\n.profileInfo {\r\n  margin-top: 53px;\r\n  width: 460px;\r\n  height: 568px;\r\n  background-color: #E8E8E8;\r\n  padding-top: 10px;\r\n}\r\n\r\n.center-element {\r\n    display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\ntd {\r\n  border: solid 2px #2F2F2F;\r\n  padding: 5px;\r\n  margin: 5px 5px 5px 5px;\r\n  text-align: center;\r\n}\r\n\r\ntable {\r\n  margin-top: 20px;\r\n  width: 166px;\r\n  margin: auto;\r\n}\r\n", ""]);
 
 // exports
 
@@ -479,7 +551,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<br>\r\n<br>\r\n<br>\r\n<div>\r\n   <h2 class=\"page-header\">Prabpreet's Profile</h2> \r\n  <div>\r\n  <img src=\"../../../assets/avatar_placeholder.png\">\r\n  <input size=\"50\" type=\"file\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\">\r\n\r\n\r\n \t<h2>Prabpreet Singh</h2> \r\n \t<textarea rows=\"4\" cols=\"50\">\"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h2>Skill Tags</h2>\r\n\r\n  </div>\r\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n  <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image\" style=\"display:none;\"/>\r\n      <img class=\"center-element vertical-margins\" src=\"../../../assets/avatar_placeholder.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">\"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -541,6 +613,67 @@ var ProfileComponent = (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
     ], ProfileComponent);
     return ProfileComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/rating/rating.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "th, td {\r\n    border: 0.1px solid black;\r\n}\t\r\n\t", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/rating/rating.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<table>\r\n  <tr>\r\n    <th>Past Experiences</th>\r\n    <th>Rating</th> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n  \r\n  <tr>\r\n    <td></td>\r\n    <td></td> \r\n  </tr>\r\n\r\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/rating/rating.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RatingComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var RatingComponent = (function () {
+    function RatingComponent() {
+    }
+    RatingComponent.prototype.ngOnInit = function () {
+    };
+    RatingComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-rating',
+            template: __webpack_require__("../../../../../src/app/components/rating/rating.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/rating/rating.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], RatingComponent);
+    return RatingComponent;
 }());
 
 
@@ -628,7 +761,7 @@ var RegisterComponent = (function () {
         this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
                 _this.flashMessage.show('You are now registered and can log in', { cssClass: 'alert-success', timeout: 3000 });
-                _this.router.navigate(['/profile']);
+                _this.router.navigate(['/tags']);
             }
             else {
                 _this.flashMessage.show('Something went wrong', { cssClass: 'alert-danger', timeout: 3000 });
@@ -648,6 +781,67 @@ var RegisterComponent = (function () {
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
     ], RegisterComponent);
     return RegisterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/tags/tags.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n }\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n}\r\n\r\n.content {\r\n  margin-top: 50px;\r\n  width: 1480px;\r\n  margin: auto;\r\n  margin-top: 50px;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/tags/tags.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"content\">\r\n  <h1 class=\"text-center\">Personal Information</h1>\r\n\r\n    <textarea class=\"infoBox\" readonly>List below tasks that you have previous experience with: These tags will be searched by users. Please enter accordingly</textarea>\r\n  <table>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n</table>\r\n  <a class=\"button\" [routerLink]=\"['/bio']\">Submit</a>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/tags/tags.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TagsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TagsComponent = (function () {
+    function TagsComponent() {
+    }
+    TagsComponent.prototype.ngOnInit = function () {
+    };
+    TagsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-tags',
+            template: __webpack_require__("../../../../../src/app/components/tags/tags.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/tags/tags.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TagsComponent);
+    return TagsComponent;
 }());
 
 
