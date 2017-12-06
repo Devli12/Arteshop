@@ -424,7 +424,7 @@ var LoginComponent = (function () {
                     cssClass: 'alert-success',
                     timeout: 10000
                 });
-                _this.router.navigate(['/profile']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 _this.flashMessage.show(data.msg, {
@@ -860,7 +860,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n }\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n}\r\n\r\n.content {\r\n  margin-top: 100px;\r\n  width: 1480px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n }\r\n\r\ntextarea {\r\n  font-size: 25px;\r\n  padding-left: 20px;\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n}\r\n\r\n.content {\r\n  margin-top: 100px;\r\n  width: 1480px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
 
 // exports
 
