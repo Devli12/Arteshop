@@ -98,12 +98,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_navbar2_navbar2_component__ = __webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -131,7 +133,8 @@ var appRoutes = [
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */] },
     { path: 'navbar', component: __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */] },
     { path: 'bio', component: __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */] },
-    { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] }
+    { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] },
+    { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_19__components_navbar2_navbar2_component__["a" /* Navbar2Component */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -148,7 +151,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__["a" /* ProfileComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__["a" /* RatingComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */]
+                __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__components_navbar2_navbar2_component__["a" /* Navbar2Component */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -176,7 +180,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\r\n.background {\r\n  width: 2000px;\r\n  height: 1000px;\r\n  margin: auto;\r\n  margin-top: 50px;\r\n}\r\n\r\nh2 {\r\n\ttext-align: left;\r\n  font-size: 15px;\r\n}\r\n\r\n.bioBox {\r\n  width: 1000px;\r\n  height: 460px;\r\n  border: solid 2px #414141;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n.content {\r\n  width: 1000px;\r\n  margin: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\r\n.background {\r\n  height: 1000px;\r\n  margin: auto;\r\n  margin-top: 100px;\r\n}\r\n\r\nh2 {\r\n\ttext-align: left;\r\n  font-size: 15px;\r\n}\r\n\r\n.bioBox {\r\n  width: 1000px;\r\n  height: 460px;\r\n  border: solid 2px #414141;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n.content {\r\n  width: 1000px;\r\n  margin: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -189,7 +193,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/bio/bio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<div class=\"background\">\r\n  <h1 class=\"text-center\">Personal Information</h1>\r\n<h2 class=\"page-header text-center\">Please enter a short paragraph explaining yourself. No description will be shown in the profile if submitted empty.  </h2>\r\n  <div class=\"content\">\r\n  <textarea class=\"bioBox\"></textarea>\r\n  <a class=\"button\" [routerLink]=\"['/dashboard']\">Submit</a>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"background\">\r\n  <h1 class=\"text-center\">Personal Information</h1>\r\n<h2 class=\"page-header text-center\">Please enter a short paragraph explaining yourself. No description will be shown in the profile if submitted empty.  </h2>\r\n  <div class=\"content\">\r\n  <textarea class=\"bioBox\"></textarea>\r\n  <a class=\"button\" [routerLink]=\"['/dashboard']\">Submit</a>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -250,7 +254,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"background\">\r\n  <div id=\"content\" class=\"center-element\">\r\n    <app-profile></app-profile>\r\n</div>\r\n</div>\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <div id=\"content\" class=\"center-element\">\r\n    <app-profile></app-profile>\r\n</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -469,7 +473,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n      <nav class=\"navbar navbar-default\">\r\n      <div class=\"container\">\r\n        <div class=\"navbar-header\">\r\n<!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n            <span class=\"sr-only\">Toggle navigation</span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n          </button> -->\r\n<!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n        </div>\r\n        <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <ul class=\"nav navbar-nav navbar-left\">\r\n            <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Home</a></li>\r\n          </ul>\r\n\r\n          <ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t<!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n            <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n            <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/profile']\">Profile</a></li>\r\n\r\n            <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/login']\">Login</a></li>\r\n            <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/register']\">Register</a></li>\r\n            <li *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n          </ul>\r\n        </div><!--/.nav-collapse -->\r\n      </div>\r\n    </nav>\r\n\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n      <nav class=\"navbar navbar-default\">\r\n      <div class=\"container\">\r\n        <div class=\"navbar-header\">\r\n<!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n            <span class=\"sr-only\">Toggle navigation</span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n          </button> -->\r\n<!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n        </div>\r\n        <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n          <ul class=\"nav navbar-nav navbar-left\">\r\n\r\n            <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Home</a></li>\r\n          </ul>\r\n\r\n          <ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t<!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n            <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n            <li *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/profile']\">Profile</a></li>\r\n\r\n            <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/login']\">Login</a></li>\r\n            <li *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/register']\">Register</a></li>\r\n            <li *ngIf=\"authService.loggedIn()\"><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n          </ul>\r\n        </div><!--/.nav-collapse -->\r\n      </div>\r\n    </nav>\r\n\r\n"
 
 /***/ }),
 
@@ -530,6 +534,67 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/navbar2/navbar2.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "a {\r\n  color: #FFFFFF;\r\n  padding: 20px;\r\n  font: arial;\r\n  font-size: 40;\r\n}\r\n\r\n.background {\r\n  background-color: #414141;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/navbar2/navbar2.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/navbar2/navbar2.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Navbar2Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Navbar2Component = (function () {
+    function Navbar2Component() {
+    }
+    Navbar2Component.prototype.ngOnInit = function () {
+    };
+    Navbar2Component = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-navbar2',
+            template: __webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Navbar2Component);
+    return Navbar2Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/profile/profile.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -551,7 +616,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n  <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image\" style=\"display:none;\"/>\r\n      <img class=\"center-element vertical-margins\" src=\"../../../assets/avatar_placeholder.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">\"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image\" style=\"display:none;\"/>\r\n      <img class=\"center-element vertical-margins\" src=\"../../../assets/avatar_placeholder.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">\"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -795,7 +860,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n }\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n}\r\n\r\n.content {\r\n  margin-top: 50px;\r\n  width: 1480px;\r\n  margin: auto;\r\n  margin-top: 50px;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n }\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n}\r\n\r\n.content {\r\n  margin-top: 100px;\r\n  width: 1480px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -808,7 +873,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/tags/tags.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<div class=\"content\">\r\n  <h1 class=\"text-center\">Personal Information</h1>\r\n\r\n    <textarea class=\"infoBox\" readonly>List below tasks that you have previous experience with: These tags will be searched by users. Please enter accordingly</textarea>\r\n  <table>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n</table>\r\n  <a class=\"button\" [routerLink]=\"['/bio']\">Submit</a>\r\n</div>\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"content\">\r\n  <h1 class=\"text-center\">Personal Information</h1>\r\n\r\n    <textarea class=\"infoBox\" readonly>List below tasks that you have previous experience with: These tags will be searched by users. Please enter accordingly</textarea>\r\n  <table>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n  <tr>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n    <td><textarea class=\"tagBox\"></textarea></td>\r\n  </tr>\r\n</table>\r\n  <a class=\"button\" [routerLink]=\"['/bio']\">Submit</a>\r\n</div>\r\n"
 
 /***/ }),
 
