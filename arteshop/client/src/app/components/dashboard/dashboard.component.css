@@ -5,6 +5,10 @@
   margin-right: auto;
 }
 
+#content {
+  margin-top: 135px;
+}
+
 #background {
   height: 1000px;
 }
