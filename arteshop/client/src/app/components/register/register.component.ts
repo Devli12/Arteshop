@@ -14,6 +14,7 @@ export class RegisterComponent implements OnInit {
   username: String;
   email: String;
   password: String;
+  bio: String;
 
   constructor(
     private validateService: ValidateService,
@@ -31,6 +32,7 @@ export class RegisterComponent implements OnInit {
       email: this.email,
       username: this.username,
       password: this.password
+
     }
 
     // Required Fields

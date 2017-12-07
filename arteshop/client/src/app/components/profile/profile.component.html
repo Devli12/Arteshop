@@ -1,13 +1,13 @@
  <div class="profileInfo">
 
     <label class="center-element vertical-margins" for="image">
-      <input size="50" type="file" name="image" accept="image/*" [(ngModel)]="profilePic" name="profilePic" id="image" style="display:none;"/>
-      <img class="center-element vertical-margins" src="../../../assets/avatar_placeholder.png"/>
+      <input size="50" type="file" name="image" accept="image/*" [(ngModel)]="profilePic" name="profilePic" id="image-input" style="display:none;"/>
+      <img id="image" class="center-element vertical-margins" src="../../../assets/profile_pic.png"/>
     </label>
 
 
- 	<h2 class="text-center vertical-margins">Prabpreet Singh</h2>
- 	<textarea class="center-element vertical-margins" rows="4" cols="50">"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.
+ 	<h2 class="text-center vertical-margins">{{user.name}}</h2>
+ 	<textarea class="center-element vertical-margins" rows="4" cols="50">Stationed in Santa Clara, California. I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.
 	</textarea>
 	<h5 class="text-center vertical-margins">Skill Tags</h5>
 
