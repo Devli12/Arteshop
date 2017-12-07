@@ -93,12 +93,12 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__ = __webpack_require__("../../../../../src/app/components/bio/bio.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__ = __webpack_require__("../../../../../src/app/components/rating/rating.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__ = __webpack_require__("../../../../../src/app/components/tags/tags.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_navbar2_navbar2_component__ = __webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__ = __webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -134,7 +134,7 @@ var appRoutes = [
     { path: 'navbar', component: __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */] },
     { path: 'bio', component: __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */] },
     { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] },
-    { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_19__components_navbar2_navbar2_component__["a" /* Navbar2Component */] }
+    { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -152,16 +152,16 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__["a" /* RatingComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_navbar2_navbar2_component__["a" /* Navbar2Component */]
+                __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_17_angular2_flash_messages__["FlashMessagesModule"]
+                __WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages__["FlashMessagesModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_15__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_16__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_18__guards_auth_guard__["a" /* AuthGuard */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_16__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_17__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -753,7 +753,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "label {\r\n\tcolor: #2F2F2F;\r\n}\r\n\r\n.background {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n\tbackground-color: #E8E8E8;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n}", ""]);
+exports.push([module.i, "label {\r\n\tcolor: #2F2F2F;\r\n}\r\n\r\n.background {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n\tbackground-color: #E8E8E8;\r\n  margin-top: 100px;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n}\r\n", ""]);
 
 // exports
 
@@ -766,7 +766,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<br>\r\n<br>\r\n<br>\r\n<div class=\"background\">\r\n<h2 class=\"page-header\">Personal Information</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n\t<div class=\"form-group\">\r\n\t\t<label>Name</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\"\r\n\t\tclass=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Username</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Email</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Password</label>\r\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\r\n\t</div>\r\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>\r\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"background\">\r\n<h2 class=\"page-header\">Personal Information</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n\t<div class=\"form-group\">\r\n\t\t<label>Name</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"name\" name=\"name\"\r\n\t\tclass=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Username</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Email</label>\r\n\t\t<input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\">\r\n\t</div>\r\n\t<div class=\"form-group\">\r\n\t\t<label> Password</label>\r\n\t\t<input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\">\r\n\t</div>\r\n\t<input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\">\r\n</form>\r\n</div>\r\n"
 
 /***/ }),
 
