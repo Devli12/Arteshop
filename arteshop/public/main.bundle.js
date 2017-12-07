@@ -94,17 +94,19 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__ = __webpack_require__("../../../../../src/app/components/rating/rating.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__ = __webpack_require__("../../../../../src/app/components/tags/tags.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__ = __webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__ = __webpack_require__("../../../../../src/app/components/report/report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -134,7 +136,8 @@ var appRoutes = [
     { path: 'navbar', component: __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */] },
     { path: 'bio', component: __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */] },
     { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] },
-    { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */] }
+    { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */] },
+    { path: 'report', component: __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -152,16 +155,17 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__["a" /* RatingComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */]
+                __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */],
+                __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_18_angular2_flash_messages__["FlashMessagesModule"]
+                __WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages__["FlashMessagesModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_16__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_17__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_19__guards_auth_guard__["a" /* AuthGuard */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_17__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_18__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -555,7 +559,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/navbar2/navbar2.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/report']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
 
 /***/ }),
 
@@ -616,7 +620,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image\" style=\"display:none;\"/>\r\n      <img class=\"center-element vertical-margins\" src=\"../../../assets/avatar_placeholder.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">\"Stationed in Santa Clara, California; I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image-input\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/profile_pic.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">{{user.name}}</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">Stationed in Santa Clara, California. I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -653,7 +657,6 @@ var ProfileComponent = (function () {
             console.log(err);
             return false;
         });
-        this.getProfilePicture();
     };
     /*
       addImage() {
@@ -846,6 +849,67 @@ var RegisterComponent = (function () {
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
     ], RegisterComponent);
     return RegisterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/report/report.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".center-element {\r\n  display: block;\r\n  width: 460px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n#content {\r\n  margin-top: 135px;\r\n  width: 1000px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  text-align: left;\r\n}\r\n\r\n.fixed {\r\n  resize: none;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\n\r\n#description {\r\n  height: 300px;\r\n}\r\n\r\ntextarea {\r\n  width: 800px;\r\n}\r\n\r\n#background {\r\n  height: 1000px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/report/report.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <div id=\"content\" class=\"center-element\">\r\n    <h1>Submit a request</h1>\r\n    <h5>Your email address</h5>\r\n    <textarea id=\"email\" class=\"fixed\"></textarea>\r\n    <h5>Subject</h5>\r\n    <h6>Please use a few words to summarize your question or concern.</h6>\r\n    <textarea id=\"subject\" class=\"fixed\"></textarea>\r\n    <h5>Description</h5>\r\n    <textarea id=\"description\"></textarea>\r\n    <br>\r\n    <br>\r\n    <a class=\"button\" [routerLink]=\"['/dashboard']\">Submit</a>\r\n  </div>\r\n\r\n</div>\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/report/report.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ReportComponent = (function () {
+    function ReportComponent() {
+    }
+    ReportComponent.prototype.ngOnInit = function () {
+    };
+    ReportComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-report',
+            template: __webpack_require__("../../../../../src/app/components/report/report.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/report/report.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ReportComponent);
+    return ReportComponent;
 }());
 
 
