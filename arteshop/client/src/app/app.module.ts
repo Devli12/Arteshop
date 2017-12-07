@@ -14,12 +14,13 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BioComponent} from "./components/bio/bio.component";
 import { RatingComponent} from "./components/rating/rating.component";
 import { TagsComponent} from "./components/tags/tags.component"
+import { Navbar2Component} from "./components/navbar2/navbar2.component";
 
 import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard';
-import {Navbar2Component} from "./components/navbar2/navbar2.component";
+
 
 
 const appRoutes: Routes =  [
