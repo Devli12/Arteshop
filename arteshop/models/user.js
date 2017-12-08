@@ -31,7 +31,7 @@ const UserSchema = mongoose.Schema({
   profilePicture: {
     type: String,
       required: true
-  }
+  },
   sendbirdToken: {
     type: String,
       required: false
