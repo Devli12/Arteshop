@@ -245,7 +245,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".center-element {\r\n  display: block;\r\n  width: 460px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n#content {\r\n  margin-top: 135px;\r\n}\r\n\r\n#background {\r\n  height: 1000px;\r\n}\r\n", ""]);
+exports.push([module.i, ".center-element {\r\n  display: block;\r\n  width: 460px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n#content {\r\n  margin-top: 135px;\r\n}\r\n\r\n#background {\r\n  height: 1000px;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n", ""]);
 
 // exports
 
@@ -258,7 +258,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <div id=\"content\" class=\"center-element\">\r\n    <app-profile></app-profile>\r\n</div>\r\n</div>\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <div id=\"content\" class=\"center-element\">\r\n    <app-profile></app-profile>\r\n    <br>\r\n    <br>\r\n    <a class=\"button\" [routerLink]=\"['/tags']\">Edit Profile</a>\r\n</div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -620,7 +620,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image-input\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/profile_pic.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">{{user.name}}</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">Stationed in Santa Clara, California. I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image-input\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/profile_pic.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabhpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">Stationed in Santa Clara, California. I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 

@@ -12,3 +12,16 @@
 #background {
   height: 1000px;
 }
+
+.button {
+  background-color: #E8E8E8;
+  color: black;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  margin: 4px 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: gray;
+}
