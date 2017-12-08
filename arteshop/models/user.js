@@ -26,9 +26,13 @@ const UserSchema = mongoose.Schema({
   },
   tags: {
     type: Array,
-      required: false
+      required: true
   },
   profilePicture: {
+    type: String,
+      required: true
+  }
+  sendbirdToken: {
     type: String,
       required: false
   }
@@ -54,6 +58,14 @@ module.exports.addUser = function(newUser, callback){
     });
   });
 }
+
+//module.exports.updateTags = function(username, newTags, callback) {
+//
+//}
+
+//module.exports.updateBio = function(username, newBio, callback) {
+//
+//}
 
 module.exports.comparePassword = function(candidatePassword, hash, callback){
   bcrypt.compare(candidatePassword, hash, (err, isMatch) => {

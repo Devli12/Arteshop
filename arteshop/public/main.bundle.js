@@ -97,17 +97,19 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__ = __webpack_require__("../../../../../src/app/components/report/report.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__ = __webpack_require__("../../../../../src/app/components/services/services.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_search_results_search_results_component__ = __webpack_require__("../../../../../src/app/components/search-results/search-results.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_inbox_inbox_component__ = __webpack_require__("../../../../../src/app/components/inbox/inbox.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -142,7 +144,8 @@ var appRoutes = [
     { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] },
     { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */] },
     { path: 'report', component: __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */] },
-    { path: 'services', component: __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__["a" /* ServicesComponent */] }
+    { path: 'services', component: __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__["a" /* ServicesComponent */] },
+    { path: 'inbox', component: __WEBPACK_IMPORTED_MODULE_19__components_inbox_inbox_component__["a" /* InboxComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -163,16 +166,17 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */],
                 __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */],
                 __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__["a" /* ServicesComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__components_search_results_search_results_component__["a" /* SearchResultsComponent */]
+                __WEBPACK_IMPORTED_MODULE_18__components_search_results_search_results_component__["a" /* SearchResultsComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__components_inbox_inbox_component__["a" /* InboxComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__["FlashMessagesModule"]
+                __WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages__["FlashMessagesModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_19__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_20__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_22__guards_auth_guard__["a" /* AuthGuard */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_20__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_21__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_23__guards_auth_guard__["a" /* AuthGuard */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -360,6 +364,67 @@ var HomeComponent = (function () {
         __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/inbox/inbox.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "th {\r\n  border: solid 1px #C0C2C2;\r\n  height: 85px;\r\n}\r\n\r\n#name {\r\n  width: 80%;\r\n  text-align: center;\r\n  font-size: 30px;\r\n}\r\n\r\n#title {\r\n  width: 20%;\r\n  text-align: center;\r\n  font-size: 35px;\r\n}\r\n\r\n#contact {\r\n  background-color: green;\r\n  height: 120px;\r\n  text-align: right;\r\n  padding-right: 10px;\r\n  font-size: 20px;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n}\r\n\r\n.background {\r\n  margin-top: 70px;\r\n\theight: 1000px;\r\n}\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/inbox/inbox.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"background\">\r\n<table>\r\n  <tr>\r\n    <th id=\"title\">Inbox</th>\r\n    <th id=\"name\">Devanshi Sukhadia</th>\r\n  </tr>\r\n <!-- <td><div id=\"contact\"><img src=\"\"Devanshi Sukhadia</div></td>-->\r\n  <td></td>\r\n</table>\r\n\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/inbox/inbox.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InboxComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var InboxComponent = (function () {
+    function InboxComponent() {
+    }
+    InboxComponent.prototype.ngOnInit = function () {
+    };
+    InboxComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-inbox',
+            template: __webpack_require__("../../../../../src/app/components/inbox/inbox.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/inbox/inbox.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InboxComponent);
+    return InboxComponent;
 }());
 
 
@@ -566,7 +631,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/navbar2/navbar2.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/services']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/report']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/services']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/inbox']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/report']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
 
 /***/ }),
 

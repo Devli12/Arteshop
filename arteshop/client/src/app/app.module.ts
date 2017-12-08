@@ -18,6 +18,7 @@ import { Navbar2Component} from "./components/navbar2/navbar2.component";
 import { ReportComponent} from "./components/report/report.component";
 import { ServicesComponent} from "./components/services/services.component"
 import { SearchResultsComponent} from "./components/search-results/search-results.component";
+import { InboxComponent} from "./components/inbox/inbox.component";
 
 import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
@@ -38,7 +39,8 @@ const appRoutes: Routes =  [
   {path:'tags', component: TagsComponent},
   {path:'navbar2', component: Navbar2Component},
   {path:'report', component: ReportComponent},
-  {path:'services', component: ServicesComponent}
+  {path:'services', component: ServicesComponent},
+  {path:'inbox', component: InboxComponent}
 ]
 
 @NgModule({
@@ -56,7 +58,8 @@ const appRoutes: Routes =  [
     Navbar2Component,
     ReportComponent,
     ServicesComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    InboxComponent
   ],
   imports: [
     BrowserModule,
