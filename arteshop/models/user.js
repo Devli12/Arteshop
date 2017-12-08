@@ -20,6 +20,14 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true
   }
+  bio: {
+    type: String,
+      required: false
+  }
+  tags: {
+    type: Array,
+      required: false
+  }
 });
 
 const User = module.exports = mongoose.model('User', UserSchema);
