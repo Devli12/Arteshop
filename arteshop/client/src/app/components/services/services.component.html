@@ -2,5 +2,8 @@
 <div id="background">
   <h2>What kind of service would you like?</h2>
   <textarea id="search-bar" class="fixed"></textarea>
-  <app-search-results></app-search-results>
+  <br>
+  <br>
+  <button (click)="createProfileComponent()">Search</button>
+  <app-search-results [componentData]="componentData"></app-search-results>
 </div>

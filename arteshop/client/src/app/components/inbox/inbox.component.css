@@ -1,4 +1,4 @@
-th {
+th, td {
   border: solid 1px #C0C2C2;
   height: 85px;
 }
@@ -23,6 +23,10 @@ th {
   font-size: 20px;
 }
 
+#contacts {
+  height: 750px;
+}
+
 table {
   width: 100%;
 }
@@ -30,6 +34,7 @@ table {
 .background {
   margin-top: 70px;
 	height: 1000px;
+  background-color: #E8E8E8;
 }
 
 .button {

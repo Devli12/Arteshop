@@ -24,6 +24,9 @@ import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import {AuthGuard} from './guards/auth.guard'
+import {Profile2Component} from "./components/profile2/profile2.component";
+import {Profile3Component} from "./components/profile3/profile3.component";
+import {ResultsComponent} from "./components/results/results.component";
 
 
 
@@ -59,7 +62,10 @@ const appRoutes: Routes =  [
     ReportComponent,
     ServicesComponent,
     SearchResultsComponent,
-    InboxComponent
+    InboxComponent,
+    Profile2Component,
+    Profile3Component,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

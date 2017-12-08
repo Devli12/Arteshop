@@ -103,12 +103,18 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_profile2_profile2_component__ = __webpack_require__("../../../../../src/app/components/profile2/profile2.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_profile3_profile3_component__ = __webpack_require__("../../../../../src/app/components/profile3/profile3.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_results_results_component__ = __webpack_require__("../../../../../src/app/components/results/results.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -167,7 +173,10 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */],
                 __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__["a" /* ServicesComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__components_search_results_search_results_component__["a" /* SearchResultsComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_inbox_inbox_component__["a" /* InboxComponent */]
+                __WEBPACK_IMPORTED_MODULE_19__components_inbox_inbox_component__["a" /* InboxComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__components_profile2_profile2_component__["a" /* Profile2Component */],
+                __WEBPACK_IMPORTED_MODULE_25__components_profile3_profile3_component__["a" /* Profile3Component */],
+                __WEBPACK_IMPORTED_MODULE_26__components_results_results_component__["a" /* ResultsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -378,7 +387,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "th {\r\n  border: solid 1px #C0C2C2;\r\n  height: 85px;\r\n}\r\n\r\n#name {\r\n  width: 80%;\r\n  text-align: center;\r\n  font-size: 30px;\r\n}\r\n\r\n#title {\r\n  width: 20%;\r\n  text-align: center;\r\n  font-size: 35px;\r\n}\r\n\r\n#contact {\r\n  background-color: green;\r\n  height: 120px;\r\n  text-align: right;\r\n  padding-right: 10px;\r\n  font-size: 20px;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n}\r\n\r\n.background {\r\n  margin-top: 70px;\r\n\theight: 1000px;\r\n}\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
+exports.push([module.i, "th, td {\r\n  border: solid 1px #C0C2C2;\r\n  height: 85px;\r\n}\r\n\r\n#name {\r\n  width: 80%;\r\n  text-align: center;\r\n  font-size: 30px;\r\n}\r\n\r\n#title {\r\n  width: 20%;\r\n  text-align: center;\r\n  font-size: 35px;\r\n}\r\n\r\n#contact {\r\n  background-color: green;\r\n  height: 120px;\r\n  text-align: right;\r\n  padding-right: 10px;\r\n  font-size: 20px;\r\n}\r\n\r\n#contacts {\r\n  height: 750px;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n}\r\n\r\n.background {\r\n  margin-top: 70px;\r\n\theight: 1000px;\r\n  background-color: #E8E8E8;\r\n}\r\n\r\n.button {\r\n\tbackground-color: #2F2F2F;\r\n\tcolor: white;\r\n\tfont-size: 22px;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\tpadding: 20px 30px;\r\n\tmargin: 4px 10px;\r\n\tborder-radius: 15px;\r\n\tborder-style: solid;\r\n\tborder-color: gray;\r\n}\r\n", ""]);
 
 // exports
 
@@ -391,7 +400,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/inbox/inbox.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"background\">\r\n<table>\r\n  <tr>\r\n    <th id=\"title\">Inbox</th>\r\n    <th id=\"name\">Devanshi Sukhadia</th>\r\n  </tr>\r\n <!-- <td><div id=\"contact\"><img src=\"\"Devanshi Sukhadia</div></td>-->\r\n  <td></td>\r\n</table>\r\n\r\n</div>\r\n\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"background\">\r\n<table>\r\n  <tr>\r\n    <th id=\"title\">Conversations</th>\r\n    <th id=\"name\">Messages</th>\r\n  </tr>\r\n  <tr>\r\n <td id=\"contacts\"></td>\r\n  <td></td>\r\n  </tr>\r\n</table>\r\n\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -759,6 +768,120 @@ var ProfileComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/profile2/profile2.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "img {\r\n  border-radius: 50%;\r\n  margin: auto;\r\n  width: 84px;\r\n  width: 127px;\r\n}\r\n\r\n.vertical-margins {\r\n  margin-top: 25px;\r\n  margin-bottom: 25px\r\n}\r\n\r\n.profileInfo {\r\n  margin-top: 53px;\r\n  width: 460px;\r\n  height: 568px;\r\n  background-color: #E8E8E8;\r\n  padding-top: 10px;\r\n}\r\n\r\n.center-element {\r\n    display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\ntd {\r\n  border: solid 2px #2F2F2F;\r\n  padding: 5px;\r\n  margin: 5px 5px 5px 5px;\r\n  text-align: center;\r\n}\r\n\r\ntable {\r\n  margin-top: 20px;\r\n  width: 166px;\r\n  margin: auto;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/profile2/profile2.component.html":
+/***/ (function(module, exports) {
+
+module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image-input\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/anirrudha_profile_pic.jpg\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Aniruddha Prabhu</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">Living in Fremont, California I know how to deal with wifi and networks more than anything. I have majored in Software Engineering from SJSU and my most entertaining classes were...\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>mac</td>\r\n      <td>assembly</td>\r\n      <td>repair</td>\r\n      <td>networks</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>installation</td>\r\n      <td>software</td>\r\n      <td>iot</td>\r\n      <td>backups</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/profile2/profile2.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Profile2Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var Profile2Component = (function () {
+    function Profile2Component() {
+    }
+    Profile2Component.prototype.ngOnInit = function () {
+    };
+    Profile2Component = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-profile2',
+            template: __webpack_require__("../../../../../src/app/components/profile2/profile2.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/profile2/profile2.component.css")]
+        })
+    ], Profile2Component);
+    return Profile2Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/profile3/profile3.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "img {\r\n  border-radius: 50%;\r\n  margin: auto;\r\n  width: 84px;\r\n  width: 127px;\r\n}\r\n\r\n.vertical-margins {\r\n  margin-top: 25px;\r\n  margin-bottom: 25px\r\n}\r\n\r\n.profileInfo {\r\n  margin-top: 53px;\r\n  width: 460px;\r\n  height: 568px;\r\n  background-color: #E8E8E8;\r\n  padding-top: 10px;\r\n}\r\n\r\n.center-element {\r\n    display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\ntd {\r\n  border: solid 2px #2F2F2F;\r\n  padding: 5px;\r\n  margin: 5px 5px 5px 5px;\r\n  text-align: center;\r\n}\r\n\r\ntable {\r\n  margin-top: 20px;\r\n  width: 166px;\r\n  margin: auto;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/profile3/profile3.component.html":
+/***/ (function(module, exports) {
+
+module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image-input\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/devanshi_profile_pic.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Devanshi Sukhadia</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">I love to work with technology.  I find it very rewarding when I can fix an issue myself, rather than calling some professional. I would love to help others manage their technological problems...\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>recovery</td>\r\n      <td>backup</td>\r\n      <td>computer</td>\r\n      <td>repair</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>web development</td>\r\n      <td>backend</td>\r\n      <td>fullstack</td>\r\n      <td>frontend</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/profile3/profile3.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Profile3Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var Profile3Component = (function () {
+    function Profile3Component() {
+    }
+    Profile3Component.prototype.ngOnInit = function () {
+    };
+    Profile3Component = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-profile3',
+            template: __webpack_require__("../../../../../src/app/components/profile3/profile3.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/profile3/profile3.component.css")]
+        })
+    ], Profile3Component);
+    return Profile3Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/rating/rating.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -990,6 +1113,67 @@ var ReportComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/results/results.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".center-element {\r\n  display: block;\r\n  width: 460px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n#content {\r\n  margin-top: 135px;\r\n  width: 1000px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  text-align: left;\r\n}\r\n\r\n.fixed {\r\n  resize: none;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\n\r\n#description {\r\n  height: 300px;\r\n}\r\n\r\ntextarea {\r\n  width: 800px;\r\n}\r\n\r\n#background {\r\n  height: 1000px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/results/results.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<table>\r\n  <tr>\r\n<app-profile2></app-profile2>\r\n<app-profile3></app-profile3>\r\n  </tr>\r\n</table>\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/results/results.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResultsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ResultsComponent = (function () {
+    function ResultsComponent() {
+    }
+    ResultsComponent.prototype.ngOnInit = function () {
+    };
+    ResultsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-results',
+            template: __webpack_require__("../../../../../src/app/components/results/results.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/results/results.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ResultsComponent);
+    return ResultsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/search-results/search-results.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1011,7 +1195,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/search-results/search-results.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-profile></app-profile>\r\n"
+module.exports = "<div #dynamicComponentContainer></div>\r\n"
 
 /***/ }),
 
@@ -1021,24 +1205,67 @@ module.exports = "<app-profile></app-profile>\r\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchResultsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__results_results_component__ = __webpack_require__("../../../../../src/app/components/results/results.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var SearchResultsComponent = (function () {
-    function SearchResultsComponent() {
+    function SearchResultsComponent(resolver) {
+        this.resolver = resolver;
+        this.currentComponent = null;
     }
     SearchResultsComponent.prototype.ngOnInit = function () {
     };
+    Object.defineProperty(SearchResultsComponent.prototype, "componentData", {
+        set: function (data) {
+            if (!data) {
+                return;
+            }
+            // Inputs need to be in the following format to be resolved properly
+            var inputProviders = Object.keys(data.inputs).map(function (inputName) { return { provide: inputName, useValue: data.inputs[inputName] }; });
+            var resolvedInputs = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ReflectiveInjector"].resolve(inputProviders);
+            // We create an injector out of the data we want to pass down and this components injector
+            var injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ReflectiveInjector"].fromResolvedProviders(resolvedInputs, this.dynamicComponentContainer.parentInjector);
+            // We create a factory out of the component we want to create
+            var factory = this.resolver.resolveComponentFactory(data.component);
+            // We create the component using the factory and the injector
+            var component = factory.create(injector);
+            // We insert the component into the dom container
+            this.dynamicComponentContainer.insert(component.hostView);
+            // Destroy the previously created component
+            if (this.currentComponent) {
+                this.currentComponent.destroy();
+            }
+            this.currentComponent = component;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('dynamicComponentContainer', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"] }),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"])
+    ], SearchResultsComponent.prototype, "dynamicComponentContainer", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object),
+        __metadata("design:paramtypes", [Object])
+    ], SearchResultsComponent.prototype, "componentData", null);
     SearchResultsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-search-results',
             template: __webpack_require__("../../../../../src/app/components/search-results/search-results.component.html"),
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_1__results_results_component__["a" /* ResultsComponent */]],
             styles: [__webpack_require__("../../../../../src/app/components/search-results/search-results.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"]])
     ], SearchResultsComponent);
     return SearchResultsComponent;
 }());
@@ -1068,7 +1295,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/services/services.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <h2>What kind of service would you like?</h2>\r\n  <textarea id=\"search-bar\" class=\"fixed\"></textarea>\r\n  <app-search-results></app-search-results>\r\n</div>\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <h2>What kind of service would you like?</h2>\r\n  <textarea id=\"search-bar\" class=\"fixed\"></textarea>\r\n  <br>\r\n  <br>\r\n  <button (click)=\"createProfileComponent()\">Search</button>\r\n  <app-search-results [componentData]=\"componentData\"></app-search-results>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1078,6 +1305,7 @@ module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <h
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__results_results_component__ = __webpack_require__("../../../../../src/app/components/results/results.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1085,11 +1313,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+
 var ServicesComponent = (function () {
     function ServicesComponent() {
+        this.componentData = null;
     }
     ServicesComponent.prototype.ngOnInit = function () { };
     ;
+    ServicesComponent.prototype.createProfileComponent = function () {
+        this.componentData = {
+            component: __WEBPACK_IMPORTED_MODULE_1__results_results_component__["a" /* ResultsComponent */],
+            inputs: []
+        };
+    };
     ServicesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-services',
