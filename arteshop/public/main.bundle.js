@@ -95,17 +95,21 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__ = __webpack_require__("../../../../../src/app/components/tags/tags.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__ = __webpack_require__("../../../../../src/app/components/navbar2/navbar2.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__ = __webpack_require__("../../../../../src/app/components/report/report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__ = __webpack_require__("../../../../../src/app/components/services/services.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_search_results_search_results_component__ = __webpack_require__("../../../../../src/app/components/search-results/search-results.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_validate_service__ = __webpack_require__("../../../../../src/app/services/validate.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__ = __webpack_require__("../../../../angular2-flash-messages/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -137,7 +141,8 @@ var appRoutes = [
     { path: 'bio', component: __WEBPACK_IMPORTED_MODULE_12__components_bio_bio_component__["a" /* BioComponent */] },
     { path: 'tags', component: __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */] },
     { path: 'navbar2', component: __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */] },
-    { path: 'report', component: __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */] }
+    { path: 'report', component: __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */] },
+    { path: 'services', component: __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__["a" /* ServicesComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -156,16 +161,18 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_13__components_rating_rating_component__["a" /* RatingComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__components_tags_tags_component__["a" /* TagsComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__components_navbar2_navbar2_component__["a" /* Navbar2Component */],
-                __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */]
+                __WEBPACK_IMPORTED_MODULE_16__components_report_report_component__["a" /* ReportComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__components_services_services_component__["a" /* ServicesComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_search_results_search_results_component__["a" /* SearchResultsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_19_angular2_flash_messages__["FlashMessagesModule"]
+                __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__["FlashMessagesModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_17__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_18__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_20__guards_auth_guard__["a" /* AuthGuard */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_19__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_20__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_22__guards_auth_guard__["a" /* AuthGuard */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -559,7 +566,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/navbar2/navbar2.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/report']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark background fixed-top\">\r\n  <nav class=\"navbar navbar-default\">\r\n    <div class=\"container\">\r\n      <div class=\"navbar-header\">\r\n        <!--            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                  </button> -->\r\n        <!--           <a class=\"navbar-brand\" href=\"#\">Skill Shop</a> -->\r\n      </div>\r\n      <div id=\"navbar\" class=\"collapse navbar-collapse\">\r\n          <img src=\"../assets/logo_navbar.png\">\r\n\r\n\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <!-- <li>     <img src=\"../assets/logo.png\"> </li> -->\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/services']\">Services</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/']\">Inbox</a></li>\r\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"><a [routerLink]=\"['/report']\">Help</a></li>\r\n\r\n          <li><a (click)=\"onLogoutClick()\" href=\"#\">Logout</a></li>\r\n        </ul>\r\n      </div><!--/.nav-collapse -->\r\n    </div>\r\n  </nav>\r\n\r\n"
 
 /***/ }),
 
@@ -813,7 +820,9 @@ var RegisterComponent = (function () {
             name: this.name,
             email: this.email,
             username: this.username,
-            password: this.password
+            password: this.password,
+            bio: this.bio,
+            tags: this.tags
         };
         // Required Fields
         if (!this.validateService.validateRegister(user)) {
@@ -916,6 +925,120 @@ var ReportComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/search-results/search-results.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "label {\r\n\tcolor: #2F2F2F;\r\n}\r\n\r\n.background {\r\n\twidth: 600px;\r\n\tmargin: auto;\r\n\tbackground-color: #E8E8E8;\r\n  margin-top: 100px;\r\n}\r\n\r\nh2 {\r\n\ttext-align: center;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/search-results/search-results.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-profile></app-profile>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/search-results/search-results.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchResultsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var SearchResultsComponent = (function () {
+    function SearchResultsComponent() {
+    }
+    SearchResultsComponent.prototype.ngOnInit = function () {
+    };
+    SearchResultsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-search-results',
+            template: __webpack_require__("../../../../../src/app/components/search-results/search-results.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/search-results/search-results.component.css")]
+        })
+    ], SearchResultsComponent);
+    return SearchResultsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/services/services.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".center-element {\r\n  display: block;\r\n  width: 460px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n#content {\r\n  margin-top: 135px;\r\n  width: 1000px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  text-align: left;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntextarea {\r\n  width: 800px;\r\n}\r\n\r\n#background {\r\n  margin-top: 100px;\r\n  margin-left: 80px;\r\n  height: 1000px;\r\n}\r\n\r\n.fixed {\r\n  resize: none;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/services/services.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar2></app-navbar2>\r\n<div id=\"background\">\r\n  <h2>What kind of service would you like?</h2>\r\n  <textarea id=\"search-bar\" class=\"fixed\"></textarea>\r\n  <app-search-results></app-search-results>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/services/services.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServicesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ServicesComponent = (function () {
+    function ServicesComponent() {
+    }
+    ServicesComponent.prototype.ngOnInit = function () { };
+    ;
+    ServicesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-services',
+            template: __webpack_require__("../../../../../src/app/components/services/services.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/services/services.component.css")]
+        })
+    ], ServicesComponent);
+    return ServicesComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/tags/tags.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -924,7 +1047,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n }\r\n\r\ntextarea {\r\n  font-size: 25px;\r\n  padding-left: 20px;\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n}\r\n\r\n.content {\r\n  margin-top: 100px;\r\n  width: 1480px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".tagBox {\r\n   width: 720px;\r\n   height: 100px;\r\n   border-radius: 10px;\r\n   border: 1px solid #000;\r\n   resize: none;\r\n   padding-right: 2px;\r\n   overflow: hidden;\r\n  border: solid 2px #414141;\r\n }\r\n\r\ntextarea {\r\n  font-size: 25px;\r\n  padding-left: 20px;\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.infoBox {\r\n  width: 1460px;\r\n  height: 100px;\r\n  border-radius: 10px;\r\n  border: 1px solid #000;\r\n  resize: none;\r\n  padding-right: 2px;\r\n  margin-left: 20px;\r\n  overflow: hidden;\r\n  border: solid 2px #414141;\r\n}\r\n\r\n.content {\r\n  margin-top: 100px;\r\n  width: 1480px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.button {\r\n  background-color: #E8E8E8;\r\n  color: black;\r\n  font-size: 22px;\r\n  border: none;\r\n  cursor: pointer;\r\n  padding: 20px 30px;\r\n  margin: 4px 10px;\r\n  border-radius: 15px;\r\n  border-style: solid;\r\n  border-color: gray;\r\n}\r\n\r\ntable {\r\n  margin-bottom: 50px;\r\n  border-collapse: separate;\r\n  border-spacing: 20px 10px;\r\n}\r\n\r\n", ""]);
 
 // exports
 

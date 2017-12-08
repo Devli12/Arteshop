@@ -6,6 +6,7 @@
    resize: none;
    padding-right: 2px;
    overflow: hidden;
+  border: solid 2px #414141;
  }
 
 textarea {
@@ -24,6 +25,7 @@ textarea {
   padding-right: 2px;
   margin-left: 20px;
   overflow: hidden;
+  border: solid 2px #414141;
 }
 
 .content {

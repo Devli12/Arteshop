@@ -16,11 +16,14 @@ import { RatingComponent} from "./components/rating/rating.component";
 import { TagsComponent} from "./components/tags/tags.component"
 import { Navbar2Component} from "./components/navbar2/navbar2.component";
 import { ReportComponent} from "./components/report/report.component";
+import { ServicesComponent} from "./components/services/services.component"
+import { SearchResultsComponent} from "./components/search-results/search-results.component";
 
 import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
-import {AuthGuard} from './guards/auth.guard';
+import {AuthGuard} from './guards/auth.guard'
+
 
 
 
@@ -34,7 +37,8 @@ const appRoutes: Routes =  [
   {path:'bio', component: BioComponent},
   {path:'tags', component: TagsComponent},
   {path:'navbar2', component: Navbar2Component},
-  {path:'report', component: ReportComponent}
+  {path:'report', component: ReportComponent},
+  {path:'services', component: ServicesComponent}
 ]
 
 @NgModule({
@@ -50,7 +54,9 @@ const appRoutes: Routes =  [
     RatingComponent,
     TagsComponent,
     Navbar2Component,
-    ReportComponent
+    ReportComponent,
+    ServicesComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
