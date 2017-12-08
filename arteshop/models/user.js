@@ -19,13 +19,17 @@ const UserSchema = mongoose.Schema({
   password: {
     type: String,
     required: true
-  }
+  },
   bio: {
     type: String,
       required: false
-  }
+  },
   tags: {
     type: Array,
+      required: false
+  },
+  profilePicture {
+    type: String,
       required: false
   }
 });
