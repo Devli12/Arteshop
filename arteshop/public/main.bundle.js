@@ -821,8 +821,8 @@ var RegisterComponent = (function () {
             email: this.email,
             username: this.username,
             password: this.password,
-            bio: this.bio,
-            tags: this.tags
+            bio: "",
+            tags: []
         };
         // Required Fields
         if (!this.validateService.validateRegister(user)) {
