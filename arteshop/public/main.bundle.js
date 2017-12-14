@@ -400,7 +400,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/inbox/inbox.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"background\">\r\n<table>\r\n  <tr>\r\n    <th id=\"title\">Conversations</th>\r\n    <th id=\"name\">Messages</th>\r\n  </tr>\r\n  <tr>\r\n <td id=\"contacts\"><div id=\"contact\"><img src=\"../../../assets/anirrudha_profile_pic.jpg\"></div></td>\r\n  <td></td>\r\n  </tr>\r\n</table>\r\n\r\n</div>\r\n\r\n"
+module.exports = "<app-navbar2></app-navbar2>\r\n<div class=\"background\">\r\n<table>\r\n  <tr>\r\n    <th id=\"title\">Conversations</th>\r\n    <th id=\"name\">Messages</th>\r\n  </tr>\r\n  <tr>\r\n  <td></td>\r\n  </tr>\r\n</table>\r\n\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -701,7 +701,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image-input\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/profile_pic.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabhpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">Stationed in Santa Clara, California. I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+module.exports = " <div class=\"profileInfo\">\r\n\r\n    <label class=\"center-element vertical-margins\" for=\"image\">\r\n      <input size=\"50\" type=\"file\" name=\"image\" accept=\"image/*\" [(ngModel)]=\"profilePic\" name=\"profilePic\" id=\"image\" style=\"display:none;\"/>\r\n      <img id=\"image\" class=\"center-element vertical-margins\" src=\"../../../assets/profile_pic.png\"/>\r\n    </label>\r\n\r\n\r\n \t<h2 class=\"text-center vertical-margins\">Prabhpreet Singh</h2>\r\n \t<textarea class=\"center-element vertical-margins\" rows=\"4\" cols=\"50\">Stationed in Santa Clara, California. I have a vast experience in completing my own tasks by hand. Most of the times I prefer to help myself than to go to an expert. It ends up saving me a lot of money.\r\n\t</textarea>\r\n\t<h5 class=\"text-center vertical-margins\">Skill Tags</h5>\r\n\r\n\t<table class=\"vertical-margins\">\r\n    <tr>\r\n      <td>Wifi</td>\r\n      <td>IKEA</td>\r\n      <td>assembly</td>\r\n      <td>bicycle</td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td>Photography</td>\r\n      <td>Filmmaking</td>\r\n      <td>XD</td>\r\n      <td>Prototyping</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
